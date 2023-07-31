@@ -14,6 +14,24 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+
+-- Dumping database structure for empleados_crud
+DROP DATABASE IF EXISTS `empleados_crud`;
+CREATE DATABASE IF NOT EXISTS `empleados_crud` /*!40100 DEFAULT CHARACTER SET utf16 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `empleados_crud`;
+
+-- Dumping structure for table empleados_crud.empleados
+DROP TABLE IF EXISTS `empleados`;
+CREATE TABLE IF NOT EXISTS `empleados` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) NOT NULL,
+  `edad` int NOT NULL,
+  `pais` varchar(100) NOT NULL,
+  `cargo` varchar(100) NOT NULL,
+  `antiguedad` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf16;
+
 -- Data exporting was unselected.
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
